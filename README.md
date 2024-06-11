@@ -6,15 +6,12 @@
 This tutorial outlines the post-install configuration of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Configure osTicket, post-installation](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Internet Information Services (IIS)
+- MySQL
 
 <h2>Operating Systems Used </h2>
 
@@ -22,11 +19,17 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 <h2>Post-Install Configuration Objectives</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Install/Enable IIS in Windows with CGI and Common HTTP Features
+- Insall PHP Manager for IIS <strong>(web server used to host osTicket)</strong>
+- Download and install Rewrite Module <strong>(helps manage URL request in osTicket)</strong>
+- Create directory C:\PHP
+- Download PHP 7.3.8 and unzip into C:\PHP
+- Download and install VC redist.x86 <strong>(osTicket relies on that contains C++ libraries for application execution and runtime compnents)</strong>
+- Downlaod and install MySQL
+- Download and install osTicket
+- Assign permissions to ost-config.php
+- Download and install HeidiSQL <strong>(database management tool with GUI)</strong>
+- Configure osTicket in browser
 
 <h2>Configuration Steps</h2>
 
